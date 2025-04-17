@@ -1,1 +1,65 @@
 chollocoches.poky
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CholloCoches</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f5f5f5; color: #333; }
+    header { background: #d60000; color: white; padding: 20px; text-align: center; }
+    nav { background: #0033cc; padding: 10px; text-align: center; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    .hero { padding: 40px; text-align: center; background: white; }
+    .catalogo { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; padding: 20px; }
+    .coche { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+    .coche img { width: 100%; height: 180px; object-fit: cover; }
+    .coche-content { padding: 15px; }
+    .coche h3 { margin: 0 0 10px; color: #d60000; }
+    .coche p { margin: 0 0 10px; }
+    .coche button { background: #0033cc; color: white; border: none; padding: 10px 15px; border-radius: 5px; cursor: pointer; }
+    footer { background: #222; color: white; padding: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CholloCoches</h1>
+    <p>Los mejores coches al mejor precio</p>
+  </header>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#nosotros">Nosotros</a>
+    <a href="#contacto">Contacto</a>
+  </nav>  <section class="hero" id="inicio">
+    <h2>Encuentra tu próximo coche</h2>
+    <p>Precios irresistibles, calidad garantizada.</p>
+  </section>  <section class="catalogo" id="catalogo">
+    <!-- Ejemplo de coche -->
+    <div class="coche">
+      <img src="https://via.placeholder.com/400x200" alt="Coche de ejemplo">
+      <div class="coche-content">
+        <h3>Ford Fiesta 2018</h3>
+        <p>95.000 km - Gasolina</p>
+        <p><strong>6.500€</strong></p>
+        <button>Me interesa</button>
+      </div>
+    </div>
+    <!-- Añadir más coches copiando el bloque de arriba -->
+  </section>  <section id="nosotros" class="hero">
+    <h2>¿Quiénes somos?</h2>
+    <p>En CholloCoches nos dedicamos a ofrecer vehículos de calidad a precios inigualables. Más de 10 años de experiencia nos respaldan.</p>
+  </section>  <section id="contacto" class="hero">
+    <h2>Contacto</h2>
+    <p>Escríbenos por WhatsApp al <strong>+34 600 000 000</strong> o envíanan\u00os un correo a <strong>info@chollocoches.com</strong></p>
+    <p>O utiliza nuestro formulario:</p>
+    <form>
+      <input type="text" placeholder="Tu nombre" required><br><br>
+      <input type="email" placeholder="Tu email" required><br><br>
+      <textarea placeholder="Mensaje..." rows="5" required></textarea><br><br>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>  <footer>
+    <p>&copy; 2025 CholloCoches. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
